@@ -146,7 +146,6 @@ public class ArtistTracksFragment extends Fragment {
             } catch (RetrofitError error) {
                 // Do nothing, empty list will be returned
             }
-
             return list;
         }
 
