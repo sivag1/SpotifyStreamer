@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="200px"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/udacity"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:id="@+id/track"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Album"
+         />
+
+    <TextView
+        android:id="@+id/album"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:layout_below="@id/track"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Track"
+        />
+
+
+</RelativeLayout>
